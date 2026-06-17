@@ -5,8 +5,8 @@ Public documentation for Minty's remote Model Context Protocol (MCP) server.
 This repository is the public-facing integration surface for developers who want to connect Minty to AI clients such as ChatGPT and Claude. It focuses on:
 
 - the hosted MCP endpoint
-- the currently deployed public tools
-- example requests and example structured responses captured from the live endpoint
+- the Minty MCP v2 tool surface
+- example requests and example structured responses captured from real MCP/API calls
 - quick connection guidance
 
 The production endpoint shown in these docs is:
@@ -29,7 +29,7 @@ This repository intentionally does not include Minty's internal deployment confi
 
 ## Live Data
 
-The example responses in this repository are captured from the live production endpoint. Because deals, cashback, and coupon inventory change over time, these examples are snapshots rather than fixed contracts for merchant content.
+The example responses in this repository are captured from real calls against the current v2 MCP implementation backed by the live Minty API. Because deals, cashback, and coupon inventory change over time, these examples are snapshots rather than fixed contracts for merchant content.
 
 ## GitHub Pages
 

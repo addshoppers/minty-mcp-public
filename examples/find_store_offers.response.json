@@ -1,0 +1,11 @@
+{
+  "type": "deals",
+  "data": {
+    "deals": [],
+    "merchant": "NoSuchStore987",
+    "category": null,
+    "categoryQuery": null,
+    "merchantLogo": null,
+    "results": []
+  }
+}
