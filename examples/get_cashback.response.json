@@ -1,0 +1,29 @@
+{
+  "type": "cashback",
+  "data": {
+    "deals": [
+      {
+        "merchantId": "6354d0ae-552d-48ba-8ee9-5264cf928706",
+        "merchant": "adidas",
+        "webInterstitialLink": "https://www.minty.com/int?m=6354d0ae-552d-48ba-8ee9-5264cf928706",
+        "cashbackRate": "0%",
+        "cashbackText": "up to $0 Cashback",
+        "description": "Get up to $0 Cashback at adidas",
+        "affiliateLink": "https://click.minty.com/int?m=6354d0ae-552d-48ba-8ee9-5264cf928706",
+        "logoUrl": "https://assets.minty.com/api-assets/merchant/adidas-com/logo/95ff7885-dea3-4410-adad-82e180b2c6af.png",
+        "isTop": false,
+        "isVerified": false
+      }
+    ],
+    "merchant": "adidas",
+    "category": null,
+    "categoryQuery": null,
+    "merchantLogo": "https://assets.minty.com/api-assets/merchant/adidas-com/logo/95ff7885-dea3-4410-adad-82e180b2c6af.png",
+    "pagination": {
+      "total": 1,
+      "offset": 0,
+      "limit": 1,
+      "hasMore": false
+    }
+  }
+}

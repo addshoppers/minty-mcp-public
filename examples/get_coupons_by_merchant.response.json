@@ -1,0 +1,8 @@
+{
+  "type": "coupons",
+  "data": {
+    "coupons": [],
+    "merchant": "Target",
+    "merchantLogo": "https://assets.minty.com/api-assets/merchant/target-com/logo/d46e3441-b8a6-42b8-82a7-ddd35e554122.jpg"
+  }
+}
