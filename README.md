@@ -20,6 +20,7 @@ If the launch URL changes, update this repository and the GitHub Pages site toge
 ## Contents
 
 - [GitHub Pages docs](./docs/index.md)
+- [Installation guide](./docs/index.md#install-in-chatgpt)
 - [Tool catalog](./docs/tools.md)
 - [Example requests and responses](./docs/examples.md)
 
