@@ -46,7 +46,7 @@ https://mcp.minty.com/mcp
 After adding the server, start a new chat or session and try prompts such as:
 
 - `Find store offers for Target`
-- `What cashback is available for Adidas?`
+- `What cashback is available for beauty products?`
 - `Find coupon codes for Sephora`
 
 ## Install In ChatGPT
@@ -58,7 +58,7 @@ In the current ChatGPT UI, the setup flow is:
 3. Open `Apps`.
 4. Click `Create app`.
 5. In the `New App` form, fill these fields:
-   - `Name`: `Minty MCP`
+   - `Name`: `Minty`
    - `Description`: optional, for example `Coupons, cashback, and store offers`
    - `Connection`: choose `Server URL`
    - `Authentication`: choose `No Auth`
@@ -71,9 +71,9 @@ https://mcp.minty.com/mcp
 7. Check the confirmation box under the custom MCP server warning.
 8. Click `Create`.
 9. Start a new chat and test with prompts such as:
-   - `Find store offers for Target`
-   - `What cashback is available for Adidas?`
-   - `Find coupon codes for Sephora`
+   - `Help me find shopping savings for home decor`
+   - `What cashback is available for beauty?`
+   - `Find coupon codes for Pizza Hut`
 
 If you do not see `Apps` or `Create app`, your current ChatGPT plan or account rollout may not support custom MCP connections yet.
 
@@ -87,7 +87,7 @@ In the current Claude UI, the setup flow is:
 4. Click `Add`.
 5. Choose `Add custom connector`.
 6. In the `Add custom connector` form, fill these fields:
-   - `Name`: `Minty MCP`
+   - `Name`: `Minty`
    - `Remote MCP server URL`: paste the URL below
 7. Paste this server URL:
 
@@ -98,9 +98,9 @@ https://mcp.minty.com/mcp
 8. If needed, expand `Advanced settings` and leave defaults unless your workspace requires something specific.
 9. Click `Add`.
 10. Start a new chat and test with prompts such as:
-   - `Find store offers for Target`
-   - `What cashback is available for Adidas?`
-   - `Find coupon codes for Sephora`
+   - `Help me find shopping savings for home decor`
+   - `What cashback is available for beauty?`
+   - `Find coupon codes for Pizza Hut`
 
 If you do not see `Connectors` or `Add custom connector`, the feature may still be in beta or unavailable for your current Claude account/workspace.
 
