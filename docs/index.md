@@ -79,29 +79,30 @@ If you do not see `Apps` or `Create app`, your current ChatGPT plan or account r
 
 ## Install In Claude
 
-Claude supports remote MCP servers over HTTP. If you are using Claude Code, add Minty with:
+In the current Claude UI, the setup flow is:
 
-```bash
-claude mcp add --transport http minty https://mcp.minty.com/mcp
+1. Open Claude.
+2. Go to `Settings`.
+3. Open `Connectors`.
+4. Click `Add`.
+5. Choose `Add custom connector`.
+6. In the `Add custom connector` form, fill these fields:
+   - `Name`: `Minty MCP`
+   - `Remote MCP server URL`: paste the URL below
+7. Paste this server URL:
+
+```text
+https://mcp.minty.com/mcp
 ```
 
-After adding the server:
-
-1. Run `claude mcp list` to confirm the server is configured.
-2. Run `claude mcp get minty` to inspect the saved configuration.
-3. In an active Claude Code session, run `/mcp` to confirm the server is connected and tools are available.
-4. Test with prompts such as:
+8. If needed, expand `Advanced settings` and leave defaults unless your workspace requires something specific.
+9. Click `Add`.
+10. Start a new chat and test with prompts such as:
    - `Find store offers for Target`
    - `What cashback is available for Adidas?`
    - `Find coupon codes for Sephora`
 
-If the server requires re-checking later, the main management commands are:
-
-```bash
-claude mcp list
-claude mcp get minty
-claude mcp remove minty
-```
+If you do not see `Connectors` or `Add custom connector`, the feature may still be in beta or unavailable for your current Claude account/workspace.
 
 ## Documentation
 
@@ -121,4 +122,4 @@ This public documentation focuses on the 3 v2 tools:
 - If ChatGPT or Claude does not show any Minty tools after setup, start a new chat or session and try again.
 - If your client rejects the server URL, verify that you entered `https://mcp.minty.com/mcp` exactly.
 - If your ChatGPT account does not expose custom MCP setup, the feature may not be enabled for your plan or rollout yet.
-- If Claude reports connection failures, retry the add command and check `claude mcp get minty` for the saved server URL.
+- If Claude reports connection failures, remove the custom connector and add it again with the exact server URL.
