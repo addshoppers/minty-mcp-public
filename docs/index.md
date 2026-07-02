@@ -35,27 +35,47 @@ https://mcp.minty.com/mcp
 
 If your client asks for a server URL, use the endpoint above directly.
 
-## Install In ChatGPT
+## How To Use
 
-ChatGPT UI labels can vary by account, plan, and rollout, but the setup flow is:
-
-1. Open ChatGPT.
-2. Go to `Settings`.
-3. Open the section for `Apps`, `Connectors`, or MCP servers.
-4. Choose the option to add a custom server or custom connector.
-5. Paste this server URL:
+Minty MCP can be added manually to supported AI clients by using the remote server URL below:
 
 ```text
 https://mcp.minty.com/mcp
 ```
 
-6. Save the connection.
-7. Start a new chat and test with prompts such as:
+After adding the server, start a new chat or session and try prompts such as:
+
+- `Find store offers for Target`
+- `What cashback is available for Adidas?`
+- `Find coupon codes for Sephora`
+
+## Install In ChatGPT
+
+In the current ChatGPT UI, the setup flow is:
+
+1. Open ChatGPT.
+2. Go to `Settings`.
+3. Open `Apps`.
+4. Click `Create app`.
+5. In the `New App` form, fill these fields:
+   - `Name`: `Minty MCP`
+   - `Description`: optional, for example `Coupons, cashback, and store offers`
+   - `Connection`: choose `Server URL`
+   - `Authentication`: choose `No Auth`
+6. Paste this server URL into the `Server URL` field:
+
+```text
+https://mcp.minty.com/mcp
+```
+
+7. Check the confirmation box under the custom MCP server warning.
+8. Click `Create`.
+9. Start a new chat and test with prompts such as:
    - `Find store offers for Target`
    - `What cashback is available for Adidas?`
    - `Find coupon codes for Sephora`
 
-If you do not see an Apps, Connectors, or MCP server option, your current ChatGPT plan or account rollout may not support custom MCP connections yet.
+If you do not see `Apps` or `Create app`, your current ChatGPT plan or account rollout may not support custom MCP connections yet.
 
 ## Install In Claude
 

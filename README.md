@@ -20,7 +20,9 @@ If the launch URL changes, update this repository and the GitHub Pages site toge
 ## Contents
 
 - [GitHub Pages docs](./docs/index.md)
-- [Installation guide](./docs/index.md#install-in-chatgpt)
+- [How to use](./docs/index.md#how-to-use)
+- [Install in ChatGPT](./docs/index.md#install-in-chatgpt)
+- [Install in Claude](./docs/index.md#install-in-claude)
 - [Tool catalog](./docs/tools.md)
 - [Example requests and responses](./docs/examples.md)
 
