@@ -49,33 +49,57 @@ After adding the server, start a new chat or session and try prompts such as:
 - `What cashback is available for beauty products?`
 - `Find coupon codes for Sephora`
 
+## Result Clicks And Sign-In
+
+Minty MCP lookups are free and anonymous. The tools can return current coupons, cashback, and store offers without requiring a Minty sign-in inside ChatGPT or Claude.
+
+The tools themselves are unauthenticated, so lookup requests do not include a Minty user session. Results are not personalized, and the tools do not expose shopper balance, order history, cashback history, or account-specific recommendations.
+
+When a shopper clicks a cashback, offer, or coupon result, the click routes through the Minty web interstitial before continuing to the merchant. The interstitial asks the shopper to sign in with an email address so Minty can attribute the shopping session. After sign-in, Minty sends the shopper to the merchant.
+
+Cashback can only be credited after the shopper signs in through Minty and completes the qualifying merchant purchase flow.
+
+## Client Plan Availability
+
+In the current tested setup, Minty MCP can be connected manually from logged-in Free accounts in both ChatGPT and Claude. No paid ChatGPT or Claude plan is required for basic Minty lookup usage.
+
+- ChatGPT: sign in, enable Developer mode in Plugins, then add Minty manually.
+- Claude: sign in and add Minty as a custom connector. Claude Free may be limited to one custom connector.
+
+Availability can vary by account rollout, workspace policy, region, and client surface.
+
 ## Install In ChatGPT
 
 In the current ChatGPT UI, the setup flow is:
 
-1. Open ChatGPT.
+1. Open ChatGPT and sign in.
 2. Go to `Settings`.
-3. Open `Apps`.
-4. Click `Create app`.
-5. In the `New App` form, fill these fields:
+3. Open `Plugins`.
+4. Open `Developer mode`.
+5. Enable `Developer mode`.
+6. Return to `Plugins`.
+7. Click the `+` button in the top-right of the Plugins page.
+8. In the `New App` form, fill these fields:
    - `Name`: `Minty`
    - `Description`: optional, for example `Coupons, cashback, and store offers`
    - `Connection`: choose `Server URL`
    - `Authentication`: choose `No Auth`
-6. Paste this server URL into the `Server URL` field:
+9. Paste this server URL into the `Server URL` field:
 
 ```text
 https://mcp.minty.com/mcp
 ```
 
-7. Check the confirmation box under the custom MCP server warning.
-8. Click `Create`.
-9. Start a new chat and test with prompts such as:
+10. Check the confirmation box under the custom MCP server warning.
+11. Click `Create`.
+12. Start a new chat and test with prompts such as:
    - `Help me find shopping savings for home decor`
    - `What cashback is available for beauty?`
    - `Find coupon codes for Pizza Hut`
 
-If you do not see `Apps` or `Create app`, your current ChatGPT plan or account rollout may not support custom MCP connections yet.
+You can open `Plugins` from the left sidebar or from `Settings` -> `Plugins`.
+
+If you do not see `Plugins`, `Developer mode`, or the top-right `+` button, confirm that you are signed in and Developer mode is enabled. Availability may also vary by rollout, region, workspace policy, or client surface.
 
 ## Install In Claude
 
@@ -102,7 +126,7 @@ https://mcp.minty.com/mcp
    - `What cashback is available for beauty?`
    - `Find coupon codes for Pizza Hut`
 
-If you do not see `Connectors` or `Add custom connector`, the feature may still be in beta or unavailable for your current Claude account/workspace.
+If you do not see `Connectors` or `Add custom connector`, confirm that you are signed in. On Claude Free, remove another custom connector if you have already used the one-connector limit. Availability may also vary by rollout, region, or workspace policy.
 
 ## Documentation
 
@@ -121,5 +145,7 @@ This public documentation focuses on the 3 v2 tools:
 
 - If ChatGPT or Claude does not show any Minty tools after setup, start a new chat or session and try again.
 - If your client rejects the server URL, verify that you entered `https://mcp.minty.com/mcp` exactly.
-- If your ChatGPT account does not expose custom MCP setup, the feature may not be enabled for your plan or rollout yet.
+- If ChatGPT does not expose custom MCP setup, confirm that Developer mode is enabled in Plugins.
 - If Claude reports connection failures, remove the custom connector and add it again with the exact server URL.
+- If a clicked result asks for an email sign-in on Minty, that is expected. Lookup is anonymous, but earning cashback requires sign-in.
+- If results are not personalized or do not include balance or order history, that is expected because the public MCP tools are unauthenticated.
