@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "minty": {
+      "type": "http",
+      "url": "https://mcp.minty.com/mcp"
+    }
+  }
+}

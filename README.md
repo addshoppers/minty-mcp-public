@@ -2,9 +2,10 @@
 
 Public documentation for Minty's remote Model Context Protocol (MCP) server.
 
-This repository is the public-facing integration surface for developers who want to connect Minty to AI clients such as ChatGPT and Claude. It focuses on:
+This repository is the public-facing integration surface for developers who want to connect Minty to AI clients such as ChatGPT, Claude, and Grok. It focuses on:
 
 - the hosted MCP endpoint
+- Grok Build plugin source files for the xAI plugin marketplace
 - the Minty MCP v2 tool surface
 - example requests and example structured responses captured from real MCP/API calls
 - quick connection guidance
@@ -23,8 +24,17 @@ If the launch URL changes, update this repository and the GitHub Pages site toge
 - [How to use](./docs/index.md#how-to-use)
 - [Install in ChatGPT](./docs/index.md#install-in-chatgpt)
 - [Install in Claude](./docs/index.md#install-in-claude)
+- [Install in Grok](./docs/index.md#install-in-grok)
 - [Tool catalog](./docs/tools.md)
 - [Example requests and responses](./docs/examples.md)
+
+## Grok Build Plugin Source
+
+This repository can be used as the official Minty plugin source for the Grok Build plugin marketplace.
+
+- `.mcp.json` declares the hosted Minty MCP server that Grok Build installs.
+- `.grok-plugin/plugin.json` declares marketplace-facing plugin metadata.
+- A marketplace PR to `xai-org/plugin-marketplace` should reference this repository with a pinned full commit SHA.
 
 ## Repository Scope
 

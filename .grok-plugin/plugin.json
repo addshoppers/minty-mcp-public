@@ -1,0 +1,18 @@
+{
+  "name": "minty",
+  "version": "1.0.0",
+  "description": "Minty shopping savings MCP integration for coupons, cashback, and store offers via the hosted MCP server at mcp.minty.com.",
+  "author": {
+    "name": "AddShoppers",
+    "url": "https://github.com/addshoppers"
+  },
+  "homepage": "https://www.minty.com",
+  "repository": "https://github.com/addshoppers/minty-mcp-public",
+  "license": "Proprietary",
+  "keywords": [
+    "minty",
+    "minty coupons",
+    "minty cashback",
+    "minty mcp"
+  ]
+}
