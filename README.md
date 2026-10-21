@@ -1,8 +1,8 @@
-# Minty MCP Public
+# Minty MCP — Cashback and Coupons for your AI agent
 
-Public documentation for Minty's remote Model Context Protocol (MCP) server.
+Public documentation for Minty's hosted Model Context Protocol (MCP) server, giving AI agents real-time access to cashback rates, coupon codes, and store offers across thousands of merchants.
 
-This repository is the public-facing integration surface for developers who want to connect Minty to AI clients such as ChatGPT, Claude, and Grok. It focuses on:
+This repository is the public-facing integration surface for developers who want to connect Minty's cashback and coupons MCP server to AI clients such as ChatGPT, Claude, and Grok. It focuses on:
 
 - the hosted MCP endpoint
 - Grok Build plugin source files for the xAI plugin marketplace
